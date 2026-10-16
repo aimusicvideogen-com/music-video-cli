@@ -18,9 +18,9 @@ It also runs as an **MCP server**, so Claude, Cursor, Windsurf and other MCP cli
 Requires Node.js 18+ and [ffmpeg](https://ffmpeg.org/download.html) (`brew install ffmpeg`, `winget install ffmpeg`, `sudo apt install ffmpeg`). If ffmpeg is not on your PATH, set `FFMPEG_PATH`.
 
 ```bash
-npm install -g aimusicvideogen
+npm install -g github:aimusicvideogen/music-video-cli
 # or run without installing
-npx aimusicvideogen --help
+npx github:aimusicvideogen/music-video-cli --help
 ```
 
 ## CLI
@@ -63,7 +63,7 @@ Add it to your MCP client. For Claude Desktop (`claude_desktop_config.json`), Cu
   "mcpServers": {
     "aimusicvideogen": {
       "command": "npx",
-      "args": ["-y", "aimusicvideogen", "mcp"]
+      "args": ["-y", "github:aimusicvideogen/music-video-cli", "mcp"]
     }
   }
 }
@@ -72,7 +72,7 @@ Add it to your MCP client. For Claude Desktop (`claude_desktop_config.json`), Cu
 Claude Code:
 
 ```bash
-claude mcp add aimusicvideogen -- npx -y aimusicvideogen mcp
+claude mcp add aimusicvideogen -- npx -y github:aimusicvideogen/music-video-cli mcp
 ```
 
 ### Tools
