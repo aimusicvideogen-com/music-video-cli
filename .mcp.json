@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aimusicvideogen": {
+      "command": "npx",
+      "args": ["-y", "github:aimusicvideogen-com/music-video-cli", "mcp"]
+    }
+  }
+}
