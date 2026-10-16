@@ -18,9 +18,9 @@ It also runs as an **MCP server**, so Claude, Cursor, Windsurf and other MCP cli
 Requires Node.js 18+ and [ffmpeg](https://ffmpeg.org/download.html) (`brew install ffmpeg`, `winget install ffmpeg`, `sudo apt install ffmpeg`). If ffmpeg is not on your PATH, set `FFMPEG_PATH`.
 
 ```bash
-npm install -g github:aimusicvideogen/music-video-cli
+npm install -g github:aimusicvideogen-com/music-video-cli
 # or run without installing
-npx github:aimusicvideogen/music-video-cli --help
+npx github:aimusicvideogen-com/music-video-cli --help
 ```
 
 ## CLI
@@ -63,7 +63,7 @@ Add it to your MCP client. For Claude Desktop (`claude_desktop_config.json`), Cu
   "mcpServers": {
     "aimusicvideogen": {
       "command": "npx",
-      "args": ["-y", "github:aimusicvideogen/music-video-cli", "mcp"]
+      "args": ["-y", "github:aimusicvideogen-com/music-video-cli", "mcp"]
     }
   }
 }
@@ -72,7 +72,7 @@ Add it to your MCP client. For Claude Desktop (`claude_desktop_config.json`), Cu
 Claude Code:
 
 ```bash
-claude mcp add aimusicvideogen -- npx -y github:aimusicvideogen/music-video-cli mcp
+claude mcp add aimusicvideogen -- npx -y github:aimusicvideogen-com/music-video-cli mcp
 ```
 
 ### Tools
@@ -101,7 +101,7 @@ These are estimates. Check the BPM against a tap tempo if a song has tempo chang
 
 ## Related
 
-- [Agent skills for music videos](https://github.com/aimusicvideogen/music-video-skills): workflows for Claude and other agents that use these tools.
+- [Agent skills for music videos](https://github.com/aimusicvideogen-com/music-video-skills): workflows for Claude and other agents that use these tools.
 - [AIMusicVideoGen](https://aimusicvideogen.com): AI music video generator, song + one photo to a finished video.
 
 ## License
