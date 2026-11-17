@@ -3,3 +3,5 @@ node_modules/
 *.wav
 *.mp3
 .DS_Store
+
+*.tgz

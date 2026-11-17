@@ -1,5 +1,8 @@
 # aimusicvideogen: free music video tools (CLI + MCP server)
 
+[![npm](https://img.shields.io/npm/v/aimusicvideogen.svg)](https://www.npmjs.com/package/aimusicvideogen)
+[![license](https://img.shields.io/npm/l/aimusicvideogen.svg)](https://github.com/aimusicvideogen-com/music-video-cli/blob/main/LICENSE)
+
 Small, local tools for musicians and AI music creators who are making a music video for a song:
 
 - **Analyze a song**: BPM, musical key, Camelot code, beat and bar length, and the most energetic 15 s and 30 s windows (usually the chorus or drop, the clip you want for TikTok, Reels and Shorts).
@@ -18,9 +21,9 @@ It also runs as an **MCP server**, so Claude, Cursor, Windsurf and other MCP cli
 Requires Node.js 18+ and [ffmpeg](https://ffmpeg.org/download.html) (`brew install ffmpeg`, `winget install ffmpeg`, `sudo apt install ffmpeg`). If ffmpeg is not on your PATH, set `FFMPEG_PATH`.
 
 ```bash
-npm install -g github:aimusicvideogen-com/music-video-cli
+npm install -g aimusicvideogen
 # or run without installing
-npx github:aimusicvideogen-com/music-video-cli --help
+npx aimusicvideogen --help
 ```
 
 ## CLI
@@ -63,7 +66,7 @@ Add it to your MCP client. For Claude Desktop (`claude_desktop_config.json`), Cu
   "mcpServers": {
     "aimusicvideogen": {
       "command": "npx",
-      "args": ["-y", "github:aimusicvideogen-com/music-video-cli", "mcp"]
+      "args": ["-y", "aimusicvideogen", "mcp"]
     }
   }
 }
@@ -72,7 +75,7 @@ Add it to your MCP client. For Claude Desktop (`claude_desktop_config.json`), Cu
 Claude Code:
 
 ```bash
-claude mcp add aimusicvideogen -- npx -y github:aimusicvideogen-com/music-video-cli mcp
+claude mcp add aimusicvideogen -- npx -y aimusicvideogen mcp
 ```
 
 ### Tools

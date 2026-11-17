@@ -21,18 +21,27 @@
   },
   "keywords": [
     "music video",
+    "music video maker",
     "ai music video generator",
+    "song to video",
+    "photo to video",
     "bpm",
     "bpm detection",
+    "bpm finder",
     "key detection",
+    "tap tempo",
     "spotify canvas",
+    "spotify canvas maker",
+    "lyric video",
+    "suno",
+    "udio",
+    "musicians",
+    "audio analysis",
+    "ffmpeg",
     "mcp",
     "mcp-server",
     "model-context-protocol",
-    "claude",
-    "suno",
-    "musicians",
-    "ffmpeg"
+    "claude"
   ],
   "homepage": "https://aimusicvideogen.com",
   "repository": {
@@ -44,6 +53,9 @@
   },
   "author": "AIMusicVideoGen <support@aimusicvideogen.com> (https://aimusicvideogen.com)",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.1",
     "zod": "^3.25.0"
